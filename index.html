@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gulier.co</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    }
+
+    .terminal {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      color: #f0f0f0;
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .prompt {
+      color: #888888;
+    }
+
+    .domain {
+      color: #f0f0f0;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.55em;
+      height: 1.15em;
+      background-color: #f0f0f0;
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 1.1s step-start infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <span class="prompt">~ $&nbsp;</span>
+    <span class="domain">gulier.co</span>
+    <span class="cursor"></span>
+  </div>
+</body>
+</html>
