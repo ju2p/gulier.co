@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>gulier.co</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      background-color: #0d0d0d;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-    }
-
-    .terminal {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      color: #f0f0f0;
-      font-size: clamp(1rem, 4vw, 1.5rem);
-      letter-spacing: 0.05em;
-      white-space: nowrap;
-      user-select: none;
-    }
-
-    .prompt {
-      color: #888888;
-    }
-
-    .domain {
-      color: #f0f0f0;
-    }
-
-    .cursor {
-      display: inline-block;
-      width: 0.55em;
-      height: 1.15em;
-      background-color: #f0f0f0;
-      margin-left: 2px;
-      vertical-align: text-bottom;
-      animation: blink 1.1s step-start infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="terminal">
-    <span class="prompt">~ $&nbsp;</span>
-    <span class="domain">gulier.co</span>
-    <span class="cursor"></span>
-  </div>
+  <header class="header">
+    <div class="brand">
+      <h3><a class="brand-link" href="index.html">Gulier</a></h3>
+      <p class="tagline">Builder at heart. Full-stack engineer and leader with 10+ years shipping products and scaling teams in fast-paced environments.</p>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Gulier</a>
+      <a href="built/index.html" class="nav-link">Built</a>
+      <a href="things/index.html" class="nav-link">Things I Like</a>
+      <a href="mailto:hey@gulier.co" class="nav-link nav-contact">✉</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="section">
+      <h3 class="section-title">What I like doing</h3>
+      <p class="section-copy">I enjoy working with products that directly impact users' lives. I like to turn messy processes into clear flows. If design is more than "wireframes" and central to the problem definition and iterating with tech, then I'm attracted. I'm drawn to software and physical experiences where detail matters, and to teams that care about doing useful work, sharing competencies because they know it'll improve their own skills and output.</p>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">A bit about me</h3>
+      <p class="section-copy">Spent 10+ years building end-to-end products, from early roadmaps to deployment, monitoring, and day-to-day improvement. Joined a startup as employee #1 when the company had 4 founders. Grew the organization to 160+ through two fundraisings (€6.3M total) before a successful acquisition by a huge corporation.</p>
+      <p class="section-copy">I've held both hands-on engineering roles and executive positions (Head of Engineering with 5-10 direct reports, CTO with 20+ cross-functional people). I conducted 200+ interviews, hired 40+ candidates.</p>
+      <p class="section-copy">I was part of the first batch of <a href="https://42.fr/en/homepage/" target="_blank">42 BornToCode</a> students (top 50 of 900, competitive peer-to-peer learning). I worked on web & mobile developments, and hardware projects like building an <a href="built/chessboard.html">electronic chessboard</a> from scratch (CNC-machined wood, ESP32-S3 microcontroller, electronics and 3D printing). I also shipped products on the App Store/Play Store.</p>
+    </section>
+
+    <section class="section">
+      <h3 class="section-title">How I work</h3>
+      <p class="section-copy">I value continuous learning, curiosity and honest feedback. Not keeping things for yourself, in the end we are all in the same boat when working together, so let's make it pleasant. I believe great engineers do more than execute tickets: they understand their users and their problems, they do a bit of design, product thinking, and even fight for ideas when needed. Tech is a tool, not the end in itself.</p>
+      <p class="section-copy">I've built teams around that mindset, with people who understand they are part of a whole, own the problem first, and code second as coding without understanding will most of the time result in the wrong solution.</p>
+    </section>
+  </main>
 </body>
 </html>
